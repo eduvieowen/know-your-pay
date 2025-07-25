@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="icon.png" type="image/png" />
+  <title>Know Your Pay 💸</title>
+</head>
+<body>
+  <main class="container">
+    <h1>Know Your Pay 💸</h1>
+    <form id="shift-form">
+      <label>Date: <input type="date" id="date" required></label>
+      <label>Clock In: <input type="time" id="clockIn" required></label>
+      <label>Clock Out: <input type="time" id="clockOut" required></label>
+      <label>Unpaid Break (minutes): <input type="number" id="break" value="0" required></label>
+      <button type="submit">Add Shift</button>
+    </form>
+    <section>
+      <h2>Shifts This Pay Period</h2>
+      <ul id="shiftList"></ul>
+      <button id="reset">Reset All Shifts</button>
+    </section>
+    <section>
+      <h2>Estimated Pay</h2>
+      <div id="result"></div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
